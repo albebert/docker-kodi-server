@@ -1,33 +1,27 @@
 # docker-kodi-server
 
-*** !!! WARNING !!! ***
-
-Start with leia branch, portable data are now in `/usr/share/kodi/portable_data`
-Update your launch command 
-
-*** WARNING END ***
+Run Kodi using docker as a server
 
 This will allow you to
-* serve files through the XBMC UPnP Library to your UPnP client/players (such as Xbmc or Chromecast).
+* serves files through the Kodi UPnP Library to your UPnP client/players (such as Kodi or Chromecast).
 * Web access every time , or use with some tools like [htpc-manager](http://htpc.io/)
-* Trigger library scan When you want or from sickbeard/sickrage/couchpotato/...
-
-Docker is used to run the latest headless version of KODI on Ubuntu
-
-
-
+* Trigger library scan When you want using api or from sickbeard/sickrage/couchpotato/sonarr/radarr/...
 
 ### Preqrequisites:
 * Docker (Follow the [installation instructions](https://docs.docker.com/))
-* A shared Library with mysql is higly recommended ( depending you needs)
+* A [shared Library with mysql](https://kodi.wiki/view/MySQL) is higly recommended to shared library ( If you don't use UPnP) 
 
 ### Quick start
 
-1. Prepare a full kodi profile with the GUI version
+1. Prepare a full kodi profile with the regular GUI version ( windows or linux )
 
-If you require web access, make sure to enable this, and set the port to 8089.
-Because 8080 is default for http proxy , the docker image expose 8089
+If you require web access, make sure to enable this, and set the port to **8089**.
+Because 8080 is default for http proxy , this docker image expose 8089
 
+Advices for the profile:
+* You don't need any display , personnaly I disable all menu and told kodi to start on settings
+* As software fake display is use , every graphic change is cpu cost , disable library update progess ( Settings / Media / Library : Hide progress of library updates)
+* Only configure scrapers , and set addons on auto update
 
 2. Make a copy of the ~/.kodi directory ( destination  doesn't matter , this is just an example)
 
