@@ -40,7 +40,7 @@ Advices for the profile:
 
   | branchname           | Kodi branch | Kodi version | Ubuntu version       |
   |----------------------|-------------|--------------|----------------------|
-  | `lastest` ( default) | matrix      | 19.4         | 18.04 (Bionic Beaver)|
+  | `lastest` ( default) | matrix      | 20.0         | 22.10 (Kinetic Kudu) |
   | `helix`              | helix       | 14.2         | 14.04 (Trusty Tahr)  |
   | `isengard`           | isengard    | 15.2         | 14.04 (Trusty Tahr)  |
   | `jarvis`             | jarvis      | 16.1         | 16.04 (Xenial Xerus) |
