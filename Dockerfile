@@ -10,7 +10,7 @@
 # See https://github.com/wernerb/docker-xbmc-server
 
 FROM ubuntu:22.10
-maintainer celedhrim "celed+git@ielf.org"
+maintainer celedhrim "albebert@gmail.com"
 
 # Set Terminal to non interactive
 ENV DEBIAN_FRONTEND noninteractive
